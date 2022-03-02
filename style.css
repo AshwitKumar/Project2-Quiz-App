@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Source+Sans+Pro&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --big-font: 60px;
+    --medium-font: 50px;
+    --small-font: 30px;
+    --blur-black: rgba(0, 0, 0, 0.6);
+}
+body{
+    font-family: 'Source Sans Pro', 'sans-serif';
+    min-height: 100vh;
+    background-color: #b8c6db;
+    background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);
+    background-size:cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    background-color: white;
+    min-width: 50vw;
+    /* min-height: 50vh; */
+    box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.109);
+    border-radius: 10px;
+}
+
+.question-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#question-text {
+    font-size: var(--big-font);
+}
+#hint {
+    font-size: var(--small-font);
+    color: var(--blur-black);
+    margin-bottom: 20px;
+}
+ul{
+    list-style: none;
+    font-size: var(--small-font);
+    margin-bottom: 20px;
+}
+ul li{
+    padding: 5px;
+    cursor: pointer;
+}
+ul li label { 
+    cursor: pointer;
+}
+button {
+    width: 100%;
+    font-size: var(--small-font);
+    min-height: 70px;
+    background-color: #63a4ff;
+    background-image: linear-gradient(315deg, #63a4ff 0%, #83eaf1 74%);
+    border: 0;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+} 
+button:hover{
+    background-image: linear-gradient(315deg, #4995ff 0%, #66e5ee 74%);
+    font-size: calc(var(--small-font) + 2px);
+}
+h2{
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
